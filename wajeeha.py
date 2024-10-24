@@ -1,3 +1,18 @@
+import os
+import subprocess
+
+# Ensure matplotlib is installed
+try:
+    import matplotlib.pyplot as plt
+except ModuleNotFoundError:
+    subprocess.run(["pip", "install", "matplotlib"])
+    import matplotlib.pyplot as plt
+
+import streamlit as st
+import pandas as pd
+import seaborn as sns
+
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
